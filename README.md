@@ -12,7 +12,9 @@ I recently attempted to install Linux on my ASUS N552VX laptop. The process was 
 
 ## 3. Returning to Debian
 - I returned to **Debian** after the Ubuntu attempt failed.
-- I modified the **GRUB settings** for normal boot to match the safe mode settings (there was a specific keyword that helped make it work).
+- I modified the **GRUB settings** for normal boot to match the safe mode configuration.  
+  To make it work properly, I added the option `dis_ucode_ldr` to the GRUB configuration, which is the same setting originally used in recovery mode.
+
 - After this adjustment, Debian finally **ran normally** on my ASUS N552VX.
 
 ## 4. Outcome
